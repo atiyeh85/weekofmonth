@@ -1,0 +1,1 @@
+df['weekofmonth'] = (df['Date'].dt.day).apply(lambda x: x//7 if (x%7==0) else (x//7)+1)
